@@ -41,10 +41,14 @@ def output_dir() -> Path:
 
 def main() -> int:
     text = validate(ENTRY)
+    payload = text.encode("utf-8")
     target = output_dir() / "entry.txt"
     target.parent.mkdir(parents=True, exist_ok=True)
-    target.write_text(text + "\n", encoding="utf-8", newline="\n")
-    sys.stdout.write(f"wrote {target} ({len(text.encode('utf-8'))} bytes, {len(text)} chars)\n")
+    # Byte-exact: no trailing newline, so the file is the one-liner and nothing else.
+    target.write_bytes(payload)
+    if target.read_bytes() != payload:
+        raise SystemExit(f"wrote {target} but read back different bytes")
+    sys.stdout.write(f"wrote {target} ({len(payload)} bytes, {len(text)} chars)\n")
     return 0
 
 
