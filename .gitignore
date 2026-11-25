@@ -1,0 +1,4 @@
+# Byte-compiled Python, kept out of the entry snapshot
+__pycache__/
+*.pyc
+/output/
