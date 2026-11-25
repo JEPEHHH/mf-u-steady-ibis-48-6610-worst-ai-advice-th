@@ -1,0 +1,53 @@
+{
+  "format": "agent-fun/kit/v1",
+  "competition": "u-steady-ibis-48-6610-worst-ai-advice-the-48-hour-9d91c580",
+  "phase": "dev",
+  "bundle_sha256": "84955287d91d138a292ff00609153941361ef7bde2cfdbb7312c5766c5b012f9",
+  "dataset_sha256": null,
+  "harness_version": "harness@600c3e8704517b71fd2a2018e57988ec1f1d24452e1afadb9da3040c707f997b node v26.13.1",
+  "scorer_version": "scorer@a1a1fe4a32baa68482a8b6d378a1fd07858c80683590cf6de1a41dcb4ad22c52 program@49e164c1bcda970b1d451c8e371f5fe6c2f1b7dd483219cc1745c0493c9784e3",
+  "pricing_rev": "34d1007cd9dd19a1d751a8b87e79e95c181a94b3e791b1a546de6dac11435dbe",
+  "protocol": "agent-fun/program/v1",
+  "files": [
+    {
+      "path": "RULES.txt",
+      "sha256": "915d8710ab595b5aedbbfe3e28259f2ef9bd6424aacfd0a2c1f7fc913dea1ad0",
+      "size": 73262
+    },
+    {
+      "path": "cli/makefun.mjs",
+      "sha256": "3a8e4b8387ec5da58207ed59dfbb9b10a34dc6c1cc187ac4f8b00e545440272f",
+      "size": 17813107
+    },
+    {
+      "path": "cli/site.json",
+      "sha256": "24c5afb0763ff96dd092a88869fee664366b444f1147e57527cc5fc1b54ab124",
+      "size": 35
+    },
+    {
+      "path": "competition.yaml",
+      "sha256": "1d9a87c5e079edef06f81230a44d0ec2ff039609669f3779a00358618f77ca81",
+      "size": 26874
+    },
+    {
+      "path": "harness/CODE.sha256",
+      "sha256": "a70b2d2643540aa7342c2acf753d70b940ed2c1dc10b94ef720725a4b89928aa",
+      "size": 20967
+    },
+    {
+      "path": "harness/SOURCES.sha256",
+      "sha256": "df95fa3c2b53ca7a8ea8462065684c6fb55beb54b9a3ce7061c853816482b95a",
+      "size": 20967
+    },
+    {
+      "path": "harness/harness-src.tar.gz",
+      "sha256": "d557b481b30450ad1be6a6b1b1e7c8f744a3907932681db6834d36bb694e4513",
+      "size": 3174083
+    },
+    {
+      "path": "harness/harness-src.tar.gz.sha256",
+      "sha256": "4e16de5380f260e4d20a020903b938a7bffecaa600b9ce32d6abeaa60df5c7e4",
+      "size": 85
+    }
+  ]
+}
